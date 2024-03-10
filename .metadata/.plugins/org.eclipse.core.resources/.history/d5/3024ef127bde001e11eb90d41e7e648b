@@ -28,6 +28,8 @@ public class LeitorCertificadoPFXValidacaoSenha {
                 // Limpar a senha da memória por segurança
                 java.util.Arrays.fill(senha, ' ');
 
+                // Faz algo com o certificado
+                System.out.println("Certificado carregado com sucesso.");
                 carregadoComSucesso = true;
             } catch (FileNotFoundException e) {
                 System.out.println("Arquivo do certificado não encontrado: " + caminhoCertificado);
